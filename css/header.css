@@ -3,5 +3,29 @@
     min-width: 1775px;
     min-height: 930px;
 }
-.header__logo{width: 186px;
-height: 58px;}
+
+.header__logo {
+    width: 186px;
+    height: 58px;
+}
+
+.header__menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu__item {
+    text-decoration: none;
+    color: white;
+}
+
+.menu__item:hover {
+    text-decoration: underline;
+}
+
+@media (min-width:500px) {
+    .header__menu {
+
+        flex-direction: row;
+    }
+}
